@@ -1,0 +1,54 @@
+<div class="caja">
+  <div class="card row">
+    <div style="padding-top: 10px;">
+      <div class="card-header">
+        <div class="row mb-3">
+          <div class="col-4">
+            <span><b>Login Acceso</b></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <form [formGroup]="formLogin">
+          <div style="margin: 0 auto;">
+            <table style="margin: 0 auto;">
+              <tr>
+                <td style="width: 100px;">Usuario</td>
+                <td style="width: 160px;">
+                  <mat-form-field>
+                    <input autofocus type="text" maxlength="10" type="text" formControlName="userName" matInput
+                      placeholder="Usuario" (keyup)="validadorUsuario()">
+                  </mat-form-field>
+                  <div *ngIf="usuarioVacio">
+                    <i class="fas fa-exclamation-triangle" style="color: red;">
+                      <span style="color: red; font-size: 12px;"> Usuario es requerido</span>
+                    </i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 100px;">Contraseña</td>
+                <td style="width: 160px;">
+                  <mat-form-field>
+                    <input type="password" maxlength="18" formControlName="contrasena" matInput placeholder="Contraseña"
+                      (keyup)="userText()">
+                  </mat-form-field>
+                  <div *ngIf="contrasenaVacia">
+                    <i class="fas fa-exclamation-triangle" style="color: red;">
+                      <span style="color: red; font-size: 12px;"> Contraseña es requerida</span>
+                    </i>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="form-group pt-4 text-center">
+            <button (click)="Ingresar()" mat-button class="btn login_btn">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

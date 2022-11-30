@@ -1,0 +1,35 @@
+/**** Responsive Table ****/
+.mat-column-id {
+  flex: none;
+  width: 6% !important;
+}
+
+.mat-column-direccion {
+  flex: none;
+  width: 22% !important;
+}
+
+.mat-column-nombre_comercial {
+  flex: none;
+  width: 22% !important;
+}
+
+.mat-column-nro_documento {
+  flex: none;
+  width: 10% !important;
+}
+
+.mat-column-razon_social {
+  flex: none;
+  width: 10% !important;
+}
+
+.mat-column-telefono {
+  flex: none;
+  width: 10% !important;
+}
+
+.mat-column-acciones {
+  flex: none;
+  width: 20% !important;
+}
